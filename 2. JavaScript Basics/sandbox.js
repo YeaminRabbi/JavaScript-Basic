@@ -75,3 +75,25 @@ let html = `
         <p>I am ${c2}</p> `;
 
 console.log(html);
+
+
+//array in javascript
+
+let arr = ['ab', 'vd', 2, 29];
+let arr2 = ['agt', 'pou'];
+
+console.log(arr);
+
+// joining all the elements in the array 
+console.log(arr.join('-'));
+
+//joining two arrays
+let combined_array = arr.concat(arr2);
+console.log(combined_array);
+
+//push & pop
+combined_array.push('LastOne');
+console.log(combined_array);
+
+combined_array.pop('LastOne');
+console.log(combined_array);
