@@ -55,3 +55,23 @@ console.log(position);
 //replacing all the characters in a string with a given character
 let replaced = UIU.replace('i', '5');
 console.log(replaced);
+
+
+
+//Template Strings
+
+const c1 = "My Name is";
+const c2 = "Tushar";
+const c3 = "Web Developer";
+
+let template_string = `Hello! ${c1} ${c2}. I am a ${c3}`;
+console.log(template_string);
+
+
+//Html templates 
+
+let html = `
+        <h2>Hello!</h2>
+        <p>I am ${c2}</p> `;
+
+console.log(html);
