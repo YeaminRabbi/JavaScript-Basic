@@ -119,6 +119,25 @@ console.log(age > 25);
 console.log(age >= 25);
 
 
+//strict comparison 
+
+console.log(age === '30');
+console.log(age === 30);
+
+
+//type conversion
+let score = '100';
+let ConvertedScore = Number(score);
+console.log(ConvertedScore+1);
+console.log(ConvertedScore , typeof ConvertedScore);
+console.log(score , typeof score);
+
+let ss = Number('102');
+let tt = String(50);
+console.log(ss , typeof ss);
+console.log(tt , typeof tt);
+
+
 
 
 
