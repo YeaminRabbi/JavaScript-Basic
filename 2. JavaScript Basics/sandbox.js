@@ -97,3 +97,30 @@ console.log(combined_array);
 
 combined_array.pop('LastOne');
 console.log(combined_array);
+
+
+
+//Boolean 
+let n = "United";
+console.log(n.includes('t'));
+console.log(n.includes('tt'));
+
+let ARRAY = ['1', '2', '3', '4'];
+console.log(ARRAY.includes('100'));
+console.log(ARRAY.includes('3'));
+
+
+//comparison operators
+let age = 30;
+console.log(age == 25);
+console.log(age != 25);
+console.log(age < 25);
+console.log(age > 25);
+console.log(age >= 25);
+
+
+
+
+
+
+
