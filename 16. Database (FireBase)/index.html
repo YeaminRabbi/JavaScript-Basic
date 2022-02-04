@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Firebase Database</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+      <div class="container my-5">
+        <h2>Recipes</h2>
+        <ul>
+         
+        </ul>
+
+        <form>
+          <label for="recipre">Add new Recipe:</label>
+          <input type="text" class="form-control" id="recipe" required>
+
+          <div class="input-group-append">
+            <input type="submit" value="add" class="btn btn-outline-secondary">
+          </div>
+          <button class="btn btn-success mt-2">unscubcribe from changes</button>
+        </form>
+      </div>
+
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+      <script>
+      var config = {
+          apiKey: "AIzaSyARhuobNZ7yjMU7bGdwfKDfIqIC2rsIcLc",
+          authDomain: "javascript-basic-4a754.firebaseapp.com",
+          databaseURL: "https://javascript-basic-4a754-default-rtdb.firebaseio.com",
+          projectId: "javascript-basic-4a754",
+          storageBucket: "javascript-basic-4a754.appspot.com",
+          messagingSenderId: "795018421770",
+          appId: "1:795018421770:web:f8643727845b22d6a4a1f3",
+          measurementId: "G-828HZ8L0KN"
+        };
+      
+       firebase.initializeApp(config);
+       const db = firebase.firestore();
+       
+      </script>
+
+
+     <script src="sandbox.js"></script>
+    </body>
+</html>
